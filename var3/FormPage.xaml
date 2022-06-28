@@ -1,0 +1,63 @@
+﻿<Page x:Class="var3.FormPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:var3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FormPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Добавление нарушения" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" />
+        <Label Content="Номер вод. удостовер:" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="ФИО:" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="Адрес:" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="Телефон" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="Гос номер" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="марка" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="модель" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="Местность" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="год" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="дата регистрации" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+        <Label Content="Нарушение" Grid.Row="11" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"/>
+
+
+
+        <TextBox Grid.Column="1"  Height="20" Name="numDriverBox" Grid.Row="1"  Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="fioBox" Grid.Row="2"  Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="adresBox" Grid.Row="3"  Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="phoneBox" Grid.Row="4"  Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="gosBox" Grid.Row="5"  Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="markBox" Grid.Row="6"  Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="modelBox" Grid.Row="7" Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="areaBox" Grid.Row="8" Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="yearBox" Grid.Row="9" Width="200"/>
+        <TextBox Grid.Column="1" Height="20" Name="startDateBox" Grid.Row="10"  Width="200"/>
+
+        <ComboBox Grid.Column="1" Height="20" SelectionChanged="test" DisplayMemberPath="title" Name="violCombo" Grid.Row="11"  Width="200"/>
+
+
+        <Button Foreground="#fecb00" Content="Добавить" Grid.ColumnSpan="2" Width="100" Height="40" FontSize="20" Grid.Row="12" Click="AddNewViol" />
+    </Grid>
+</Page>

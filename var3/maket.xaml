@@ -1,0 +1,36 @@
+﻿<Page x:Class="var3.maket"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:var3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="maket">
+
+    <Grid Background="#b4c7e7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1">
+            <Image Source="C:\Users\c1own\Desktop\var3-master\var3-master\var3\Resourse\Logo.png" Height="146"/>
+            <Button FontSize="16" Foreground="White" Name="InsBtn" Width="130" Click="GoInspector" Content="Инспекторы" Margin="10"/>
+            <Button FontSize="16" Foreground="White" Name="driversBtn" Width="130" Click="GoDrivers" Content="Водители" Margin="10"/>
+            <Button FontSize="16" Foreground="White" Name="FormBtn" Width="130" Click="GoForm" Content="Форма нарушения" Margin="10"/>
+            <Button FontSize="16" Foreground="White" Name="CarBtn" Width="130" Click="GoCars" Content="Автомобили" Margin="10"/>
+            <Button FontSize="16" Foreground="White" Name="ListBtn" Width="130" Click="GoList" Content="Список Пдд" Margin="10"/>
+            <Button FontSize="16" Foreground="White" Name="violBtn"  Width="130" Click="GoViolation" Content="Нарушение" Margin="10"/>
+
+
+        </StackPanel>
+        <StackPanel Grid.Column="0">
+
+            <Frame Name="frame"/>
+
+        </StackPanel>
+        
+    </Grid>
+</Page>
